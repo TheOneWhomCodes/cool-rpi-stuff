@@ -145,3 +145,17 @@ aplay /usr/share/sounds/alsa/Front_Center.wav
 ```
 
 **BEWARE**: since it's a lightweight builtin command, it can only play .wav files! so no mp3!!
+
+To change get the current volume of your device you can write this:
+
+```
+pactl get-sink-volume DEVICE_NAME
+```
+for me DEVICE_NAME would be *bluez_sink.41_42_C6_BD_99_64.a2dp_sink* You can find out what device name you have by looking at the steps above
+
+to change the volume you can do this
+
+```
+pactl set-sink-volume DEVICE_NAME 100%
+```
+You can even go past a 100% when the device normally doesn't let you, so that's a fun way to bypass that!
