@@ -7,9 +7,10 @@
 
 to enter the bluetooth terminal type:
 
-´´´
+```
 bluetoothctl
-´´´
+```
+
 ctl stands for control, cool huh
 
 to enable bluetooth, type:
